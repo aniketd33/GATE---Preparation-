@@ -1,0 +1,27 @@
+1. Probability Rules
+
+Day 1: Probability Basics — GATE DA 2027
+Today we will start with the first topic: Probability Rules. I'll explain it in simple English, with formulas, examples and GATE-style practice questions.
+Study time: 60–90 minutes
+
+Goal: Understand probability and solve basic numerical questions.
+
+
+1. What is probability?
+Definition: Probability is the measure of how likely an event is to happen.
+The probability of an event \(A\) is:
+\[
+P(A)=\frac{\text{Favourable outcomes}}{\text{Total equally likely outcomes}}
+\]
+
+Example: When we roll a fair six-sided die, what is the probability of getting 4?
+- Favourable outcomes = 1
+- Total outcomes = 6
+\[
+P(4)=\frac{1}{6}
+\]
+
+Remember:
+- \(P(A)=0\): The event is impossible.
+- \(P(A)=1\): The event is certain.
+- \(0\leq P(A)\leq1\): Probability always lies between 0 and 1.
