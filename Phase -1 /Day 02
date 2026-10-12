@@ -1,0 +1,111 @@
+Day 2: Conditional Probability & Bayes’ Theorem
+
+1. Conditional probability
+Definition: Conditional probability is the probability of an event occurring when another event has already occurred.
+Formula:
+\[
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+\]
+
+Here:
+- \(P(A\mid B)\): Probability of A given B.
+- \(P(A\cap B)\): Probability that both A and B occur.
+- \(P(B)\): Probability of B, which must be greater than zero.
+Example: A fair die is rolled. Given that the result is even, what is the probability that it is 4?
+Even outcomes: \(\{2,4,6\}\)
+Only one outcome is 4, out of three possible even outcomes.
+\[
+P(4\mid \text{even})=\frac13
+\]
+
+2. Independent events
+Two events are independent when the occurrence of one does not change the probability of the other.
+Formula:
+\[
+P(A\cap B)=P(A)P(B)
+\]
+
+Example: Toss a fair coin twice. What is the probability of getting heads on the first toss and tails on the second?
+\[
+P(H\cap T)=\frac12\times\frac12=\frac14
+\]
+
+Remember: Independent events are not the same as mutually exclusive events. Mutually exclusive events cannot happen together.
+3. Bayes’ theorem
+Bayes’ theorem helps us update a probability when new information becomes available.
+
+
+\(P(A|B) = \frac{P(B|A)P(A)}{P(B)}\)
+
+\(P(A\mid B)=\frac{0.60(0.29)}{0.69}=0.25\)
+
+\(P(A)\)
+
+
+
+
+\(P(B\mid A)\)
+
+
+
+
+\(P(B\mid \neg A)\)
+
+
+
+
+
+
+
+
+
+\(P(B)\)= 0.69
+
+
+\(P(B\cap A)\)= 0.17
+\(P(B\cap \neg A)\)= 0.51
+
+
+
+
+
+
+
+Give feedback
+
+Formula:
+\[
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
+\]
+
+Where:
+- \(P(A)\): Prior probability.
+- \(P(B\mid A)\): Probability of evidence B given A.
+- \(P(B)\): Overall probability of the evidence.
+- \(P(A\mid B)\): Updated probability after observing B.
+GATE-style example
+A disease affects 1% of people. A test correctly identifies 90% of people with the disease and has a 5% false-positive rate. If a person tests positive, what is the probability that they actually have the disease?
+Given:
+- \(P(D)=0.01\)
+- \(P(+\mid D)=0.90\)
+- \(P(+\mid \neg D)=0.05\)
+- \(P(\neg D)=0.99\)
+Using Bayes’ theorem:
+\[
+P(D\mid +)=
+\frac{0.90(0.01)}
+{0.90(0.01)+0.05(0.99)}
+\]
+
+\[
+=\frac{0.009}{0.0585}\approx0.1538
+\]
+
+Answer: Approximately 15.38%.
+Even with a positive test, the probability is only about 15.38% because the disease is rare and false positives occur.
+4. Quick revision notes
+Concept	Formula
+Conditional probability	\(P(A\mid B)=P(A\cap B)/P(B)\)
+Independent events	\(P(A\cap B)=P(A)P(B)\)
+Bayes’ theorem	\(P(A\mid B)=P(B\mid A)P(A)/P(B)\)
+Complement	\(P(A^c)=1-P(A)\)
